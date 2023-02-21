@@ -1,0 +1,40 @@
+body {
+    display: grid;
+    place-content: center;
+    width: 100vh;
+    height: 100vh;
+    margin: 0;
+}
+
+.box {
+    display: flex;
+    width: 400px;
+    height: 400px;
+    border: 1px solid;
+}
+
+.box-inside {
+    position: relative;
+    width: 200px;
+    height: 200px;
+}
+
+.one {
+    background-color: antiquewhite;
+    top: 0;
+    left: 150px;
+    z-index: 1;
+}
+.two {
+    background-color: aqua;
+    top: 100px;
+    left: 50px;
+    z-index: 2;
+}
+
+.three {
+    background-color:blue;
+    z-index: 3;
+    top: 0;
+    left: -50px;
+}

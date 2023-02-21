@@ -1,0 +1,166 @@
+:root {
+    box-sizing: border-box;
+}
+
+* {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: beige;
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    overflow-y: hidden;
+}
+
+header {
+    display: flex;
+    width: 70px;
+    height: 100%;
+    background-color: rgb(169, 149, 241);
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.header {
+    display: none;
+}
+
+.buttom {
+    display: flex;
+    height: fit-content;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    margin: 0;
+    padding: 10px 0;
+    width: 40px;
+    height: 40px;
+}
+
+.vertical {
+    border: 1px solid;
+    margin: 8px 5px;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.menu a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: fit-content;
+    margin: 0;
+    padding: 10px 0;
+}
+
+.menu a img {
+    width: 40px;
+    height: 40px;
+}
+
+.configuration {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.configuration img {
+    width: 40px;
+    height: 40px;
+}
+
+.buttom, .menu a, .configuration {
+    border-radius: 10px;
+}
+
+.menu a:hover, .buttom:hover, .configuration:hover {
+    background-color: rgba(240, 248, 255, 0.322);
+    cursor: pointer;
+}
+
+p {
+    width: fit-content;
+}
+
+main {
+    margin-left: 70px;
+}
+
+.home, .about_me, .projects, .contact {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+
+.home {
+    background-color: aliceblue;
+}
+
+.about_me {
+    background-color: antiquewhite;
+}
+
+.projects {
+    background-color: aquamarine;
+}
+
+.contact {
+    background-color: blue;
+}
+
+.nav_arrows a {
+    text-decoration: none;
+}
+
+.nav_arrows img {
+    height: 40px;
+}
+
+@media only screen and (max-width: 480px){
+    header {
+        display: none;
+    }
+
+    .header {
+        display: block;
+        position: fixed;
+        border-radius: 50%;
+        background-color: aqua;
+        height: 50px;
+        width: 50px;
+        bottom: 5px;
+        right: 5px;
+    }
+
+    .header .buttom {
+        width: 100%;
+        height: 100%;
+    }
+
+    main {
+        margin: 0;
+    }
+
+
+}

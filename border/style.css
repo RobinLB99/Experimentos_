@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 10px;
+}
+
+.box {
+    border: 1px solid;
+    width: 30%;
+    height: 30%;
+}
+
+.one {
+    border-top: 10vh solid transparent;
+    border-bottom: 20vh solid;
+    border-left: 30vw solid transparent;
+    border-right: 30vw solid transparent;
+}
+
+.two {
+    border-top: 10vh solid;
+    border-left: 20vh solid transparent;
+    border-right: 20vh solid transparent;
+}
+
+.three {
+    border-right: 10vh solid transparent;
+    border-bottom: 20vh solid;
+    border-top: 20vh solid;
+}
+
+.p3 {
+    color: aliceblue;
+}

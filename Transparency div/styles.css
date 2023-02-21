@@ -1,0 +1,30 @@
+html, body {
+    margin: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.content {
+    height: 100%;
+    width: 100%;
+    background-image: url('./img/image3.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+    place-items: center;
+}
+
+.cards {
+    height: 200px;
+    width: 300px;
+    /*background: linear-gradient(150deg, rgba(255, 255, 255, 0.253), rgba(255, 255, 255, 0.542));*/
+    background-color: rgba(255, 255, 255, 0.495);
+    backdrop-filter: blur(5px);
+    border-radius: 10px;
+}
+
+.cards:hover {
+    background: linear-gradient(150deg, rgba(255, 255, 255, 0.623), rgba(255, 255, 255, 0.83));
+    backdrop-filter: blur(15px);
+}

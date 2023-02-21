@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    background-color: blueviolet;
+}
+
+.img {
+    width: 400px;
+    height: 500px;
+    margin: 0 auto;
+    margin-top: 50px;
+    background-image: url("./img/image1.jpg");
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+}
+
+.img::after {
+    content: "Hola mundo";
+    background-color: #ececec52;
+    backdrop-filter: blur(5px);
+    color: black;
+    font-size: 2rem;
+    position: absolute;
+    inset: 0;
+    display: grid;
+    place-items: center;
+    transform: translateY(100%);
+    transition: transform .3s;;
+}
+
+.img:hover::after {
+    transform: translateY(0);
+}
+

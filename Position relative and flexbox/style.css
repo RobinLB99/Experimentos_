@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: grid;
+    place-items: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.box {
+    border: 1px solid;
+    width: 80%;
+    height: 50vh;
+
+    display: flex;
+}
+
+.content1, .content2 {
+    width: 100px;
+    height: 100px;
+    border: 1px solid;
+    position: relative;
+}
+
+.content1 {
+    background-color: blue;
+    top: 50%;
+}
+
+.content2 {
+    background-color: blueviolet;
+    left: -100px;
+}
+

@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial;
+}
+
+.grid {
+    width: 70%;
+    margin: 80px auto;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+}
+
+.grid:hover .grid_paragraph{
+    clip-path: circle(150% at top left);
+    transition: clip-path .4s;
+}
+
+.grid_img {
+    width: 100%;
+
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+.grid_paragraph {
+    background: linear-gradient(rgba(255, 255, 255, 0.295), rgba(206, 205, 205, 0.397));
+    color: #fff;
+    font-size: 2.5rem;
+
+    grid-column: 1/2;
+    grid-row: 1/2;
+
+    display: grid;
+    place-items: center;
+
+    clip-path: circle(0 at top left);
+    transition: clip-path .4s;
+}

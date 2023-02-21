@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+}
+
+.seccion {
+    height: 100%;
+}
+
+.s1 {
+    background-color: #230d45;
+}
+
+.s2 {
+    background-color: #1d1d1d;
+    height: calc(100% + 200px);
+    border-top: 15vh #230d45 solid;
+    border-bottom: 15vh #230d45 solid;
+    border-left: 98vw #1d1d1d solid;
+    position: relative;
+}
+
+.s3 {
+    background-color: #230d45;
+}
