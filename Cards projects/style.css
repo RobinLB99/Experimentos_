@@ -99,7 +99,6 @@ input[type="checkbox"]:checked + label .buttons {
     text-decoration: none;
     color: #ffffffcb;
     background-color: rgb(26, 28, 29);
-    /*box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);*/
 
     display: grid;
     grid-template-columns: .5fr 1fr;

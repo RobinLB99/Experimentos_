@@ -11,7 +11,6 @@ body {
 .contenedor {
     width: 100%;
     height: 100vh;
-    padding: 20px;
 
     display: grid;
     place-items: center;
@@ -25,55 +24,52 @@ body {
 
     background-color: rgb(245, 245, 245);
 
-    display: none;
-
-    animation-name: zoom;
-    animation-duration: .2s;
+    animation: zoomIn 200ms;
 }
 
-@keyframes zoom {
+@keyframes zoomIn {
     0% {
-        width: 0%;
-        height: 0%;
+        transform: scale(0%);
+        opacity: 0;
     }
     10% {
-        width: 10%;
-        height: 0%;
+        transform: scale(10%);
+        opacity: 0.1;
     }
     20% {
-        width: 20%;
-        height: 10%;
+        transform: scale(20%);
+        opacity: 0.2;
     }
     30% {
-        width: 30%;
-        height: 20%;
+        transform: scale(30%);
+        opacity: 0.3;
     }
     40% {
-        width: 40%;
-        height: 30%;
+        transform: scale(40%);
+        opacity: 0.4;
     }
     50% {
-        width: 50%;
-        height: 40%;
+        transform: scale(50%);
+        opacity: 0.5;
     }
     60% {
-        width: 60%;
-        height: 50%;
+        transform: scale(60%);
+        opacity: 0.6;
     }
     70% {
-        width: 70%;
-        height: 60%;
+        transform: scale(70%);
+        opacity: 0.7;
     }
     80% {
-        width: 80%;
-        height: 70%;
+        transform: scale(80%);
+        opacity: 0.8;
     }
     90% {
-        width: 90%;
-        height: 80%;
+        transform: scale(90%);
+        opacity: 0.9;
     }
     100% {
-        width: 100%;
-        height: 90%;
+        transform: scale(100%);
+        opacity: 1;
     }
 }
