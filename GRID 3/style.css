@@ -10,17 +10,24 @@ body {
 
     display: grid;
     place-items: center;
+
+    background-color: black;
 }
 
 .cards {
     min-width: 300px;
-    width: 80%;
+    width: 100%;
 
-    padding: 25px;
+    background: url("./img/image2.jpg"), center, no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+    padding: 10px;
     border: 1px solid black;
 
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, .7fr));
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     gap: 15px;
 
     justify-content: center;
@@ -28,20 +35,120 @@ body {
 }
 
 .card {
-    height: 320px;
-    background-color: #7EFFB2;
+    width: 300px;
+    height: 350px;
+    background-color: rgba(36, 41, 46, 0.8);
+    color: white;
     border-radius: 5px;
-    padding: 15px;
+
+    display: grid;
+    grid-template-rows: 1fr auto;
+    grid-template-columns: 1fr;
+
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);;
+
+    overflow: hidden;
+    cursor: pointer;
+
+    transition-duration: .5s;
+}
+
+.card:hover {
+    background-color: rgb(36, 41, 46, 1);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.8);
+    transition-duration: .5s;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+.buttons {
+    grid-column: -1/1;
+    grid-row: -1/1;
+
+    background-color: rgb(36, 41, 46, 1);
 
     display: flex;
     flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    gap: 10px;
+
+    align-items: center;
+
+    clip-path: circle(0 at top left);
+    transition: clip-path .4s;
+}
+
+input[type="checkbox"]:checked + label .buttons {
+    clip-path: circle(150% at top left);
+}
+
+
+.buttons a {
+    width: 150px;
+    height: 40px;
+    padding: 5px;
+    border-radius: 4px;
+
+    font-size: 1.3rem;
+    text-decoration: none;
+    color: #ffffffcb;
+    background-color: rgb(26, 28, 29);
+    /*box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);*/
+
+    display: grid;
+    grid-template-columns: .5fr 1fr;
+    gap: 5px;
+    place-items: center;
+
+    transition-duration: .4s;
+
+    cursor: pointer;
+}
+
+.buttons a:hover {
+    background-color: rgb(53, 59, 66);
+    transition-duration: .4s;
+}
+
+.buttons p {
+    width: 100%;
+}
+
+.card.empty {
+    width: 300px;
+    height: 0px;
+    opacity: 0;
 }
 
 .preview_project {
     width: 100%;
-    height: 180px;
+    height: 100%;
 
     object-fit: cover;
+
+    grid-column: -1/1;
+    grid-row: 1/2;
+}
+
+.project_description {
+    width: 100%;
+    padding: 10px;
+
+    grid-column: -1/1;
+    grid-row: 2/3;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 10px;
+
+    overflow: hidden;
 }
 
 .tecnologies {
@@ -50,10 +157,14 @@ body {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
 
-    justify-content: left;
-    align-items: center;
+    gap: 10px;
 }
 
-.tecnologies i {
-    font-size: 1.8rem;
+.tecnologies li {
+    background-color: rgba(24, 24, 24, 0.708);
+    color: aliceblue;
+
+    padding: 5px 10px;
+
+    text-align: center;
 }

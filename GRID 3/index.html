@@ -6,61 +6,125 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/all.min.css">
     <link rel="stylesheet" href="style.css">
-    <script src="./script.js"></script>
+    <script>
+        const checkboxes = document.getElementsByName("option");
+
+        function deselectAllCheckboxesExcept(clickedCheckbox) {
+            for (let i = 0; i < checkboxes.length; i++) {
+                if (checkboxes[i] !== clickedCheckbox) {
+                    checkboxes[i].checked = false;
+                }
+            }
+        }
+    </script>
     <title>Grid responsive</title>
 </head>
 <body>
     <div class="cards">
-        <div class="card">
-            <h3 class="name-project">Title of project 1</h3 >
-            <img src="./img/image1.jpg" alt="" class="preview_project">
-            <ul class="tecnologies">
-                <li><i class="fa-brands fa-html5"></i></li>
-                <li><i class="fa-brands fa-css3-alt"></i></li>
-                <li><i class="fa-brands fa-square-js"></i></i></li>
-            </ul>
-            <p class="descrip_project">Lorem ipsum dolor sit amet consectetur, adipisicing elit. A, iusto.</p>
-        </div>
-        <div class="card">
-            <h3 class="name-project">Title of project 1</h3 >
-            <img src="./img/image1.jpg" alt="" class="preview_project">
-            <ul class="tecnologies">
-                <li><i class="fa-brands fa-html5"></i></li>
-                <li><i class="fa-brands fa-css3-alt"></i></li>
-                <li><i class="fa-brands fa-square-js"></i></i></li>
-            </ul>
-            <p class="descrip_project">Lorem ipsum dolor sit amet consectetur, adipisicing elit. A, iusto.</p>
-        </div>
-        <div class="card">
-            <h3 class="name-project">Title of project 1</h3 >
-            <img src="./img/image1.jpg" alt="" class="preview_project">
-            <ul class="tecnologies">
-                <li><i class="fa-brands fa-html5"></i></li>
-                <li><i class="fa-brands fa-css3-alt"></i></li>
-                <li><i class="fa-brands fa-square-js"></i></i></li>
-            </ul>
-            <p class="descrip_project">Lorem ipsum dolor sit amet consectetur, adipisicing elit. A, iusto.</p>
-        </div>
-        <div class="card">
-            <h3 class="name-project">Title of project 1</h3 >
-            <img src="./img/image1.jpg" alt="" class="preview_project">
-            <ul class="tecnologies">
-                <li><i class="fa-brands fa-html5"></i></li>
-                <li><i class="fa-brands fa-css3-alt"></i></li>
-                <li><i class="fa-brands fa-square-js"></i></i></li>
-            </ul>
-            <p class="descrip_project">Lorem ipsum dolor sit amet consectetur, adipisicing elit. A, iusto.</p>
-        </div>
-        <div class="card">
-            <h3 class="name-project">Title of project 1</h3 >
-            <img src="./img/image1.jpg" alt="" class="preview_project">
-            <ul class="tecnologies">
-                <li><i class="fa-brands fa-html5"></i></li>
-                <li><i class="fa-brands fa-css3-alt"></i></li>
-                <li><i class="fa-brands fa-square-js"></i></i></li>
-            </ul>
-            <p class="descrip_project">Lorem ipsum dolor sit amet consectetur, adipisicing elit. A, iusto.</p>
-        </div>
+        <input type="checkbox" name="option" id="checkbox1" onclick="deselectAllCheckboxesExcept(this)">
+        <label for="checkbox1" class="card">
+            <img src="./img/image1.jpg" alt="preview_project" class="preview_project">
+            <figcaption class="project_description">
+                <h3 class="name-project">Title of project 1</h3 >
+                 <ul class="tecnologies">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>Javascript</li>
+                </ul>
+                <p class="descrip_project">Lorem ipsum dolor sit amet consectetur, adipisicing elit. A, iusto.</p>
+            </figcaption>
+            <div class="buttons">
+                <a href="https:www.github.com" target="_blank"><i class="fa-brands fa-github"></i><p>Codigo</p></a>
+                <a href="#"><i class="fa-solid fa-globe"></i><p>Web</p></a>
+            </div>
+        </label>
+        <input type="checkbox" name="option" id="checkbox2" onclick="deselectAllCheckboxesExcept(this)">
+        <label for="checkbox2" class="card">
+            <img src="./img/image2.jpg" alt="preview_project" class="preview_project">
+            <figcaption class="project_description">
+                <h3 class="name-project">Title of project 1</h3 >
+                 <ul class="tecnologies">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>Javascript</li>
+                </ul>
+                <p class="descrip_project">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente voluptas illum cum illo optio. At.</p>
+            </figcaption>
+            <div class="buttons">
+                <a href="https:www.github.com" target="_blank"><i class="fa-brands fa-github"></i><p>Codigo</p></a>
+                <a href="#"><i class="fa-solid fa-globe"></i><p>Web</p></a>
+            </div>
+        </label>
+        <input type="checkbox" name="option" id="checkbox3" onclick="deselectAllCheckboxesExcept(this)">
+        <label for="checkbox3" class="card">
+            <img src="./img/image3.jpg" alt="preview_project" class="preview_project">
+            <figcaption class="project_description">
+                <h3 class="name-project">Title of project 1</h3 >
+                 <ul class="tecnologies">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>Javascript</li>
+                </ul>
+                <p class="descrip_project">Lorem ipsum dolor sit amet consectetur, adipisicing elit. A, iusto.</p>
+            </figcaption>
+            <div class="buttons">
+                <a href="https:www.github.com" target="_blank"><i class="fa-brands fa-github"></i><p>Codigo</p></a>
+                <a href="#"><i class="fa-solid fa-globe"></i><p>Web</p></a>
+            </div>
+        </label>
+        <input type="checkbox" name="option" id="checkbox4" onclick="deselectAllCheckboxesExcept(this)">
+        <label for="checkbox4" class="card">
+            <img src="./img/image2.jpg" alt="preview_project" class="preview_project">
+            <figcaption class="project_description">
+                <h3 class="name-project">Title of project 1</h3 >
+                 <ul class="tecnologies">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>Javascript</li>
+                </ul>
+                <p class="descrip_project">Lorem ipsum dolor sit amet consectetur, adipisicing elit. A, iusto.</p>
+            </figcaption>
+            <div class="buttons">
+                <a href="https:www.github.com" target="_blank"><i class="fa-brands fa-github"></i><p>Codigo</p></a>
+                <a href="#"><i class="fa-solid fa-globe"></i><p>Web</p></a>
+            </div>
+        </label>
+        <input type="checkbox" name="option" id="checkbox5" onclick="deselectAllCheckboxesExcept(this)">
+        <label for="checkbox5" class="card">
+            <img src="./img/image3.jpg" alt="preview_project" class="preview_project">
+            <figcaption class="project_description">
+                <h3 class="name-project">Title of project 1</h3 >
+                 <ul class="tecnologies">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>Javascript</li>
+                </ul>
+                <p class="descrip_project">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente voluptas illum cum illo optio. At.</p>
+            </figcaption>
+            <div class="buttons">
+                <a href="https:www.github.com" target="_blank"><i class="fa-brands fa-github"></i><p>Codigo</p></a>
+                <a href="#"><i class="fa-solid fa-globe"></i><p>Web</p></a>
+            </div>
+        </label>
+        <input type="checkbox" name="option" id="checkbox6" onclick="deselectAllCheckboxesExcept(this)">
+        <label for="checkbox6" class="card">
+            <img src="./img/image1.jpg" alt="preview_project" class="preview_project">
+            <figcaption class="project_description">
+                <h3 class="name-project">Title of project 1</h3 >
+                 <ul class="tecnologies">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>Javascript</li>
+                </ul>
+                <p class="descrip_project">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente voluptas illum cum illo optio. At.</p>
+            </figcaption>
+            <div class="buttons">
+                <a href="https:www.github.com" target="_blank"><i class="fa-brands fa-github"></i><p>Codigo</p></a>
+                <a href="#"><i class="fa-solid fa-globe"></i><p>Web</p></a>
+            </div>
+        </label>
+        <div class="card empty"></div>
+        <div class="card empty"></div>
     </div>
 </body>
 </html>

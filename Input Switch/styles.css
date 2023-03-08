@@ -19,6 +19,14 @@
 #interruptor {
     display: grid;
     place-items: center;
+    cursor: pointer;
+    width: 100px;
+    height: 100px;
+    border-radius: 4px;
+}
+
+#interruptor:hover {
+    background-color: #7a7a7a74;
 }
 
 #sol, #luna {
