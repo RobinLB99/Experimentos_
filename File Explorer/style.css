@@ -16,7 +16,8 @@
 }
 
 #file_explore {
-    width: 75%;
+    max-width: 1024px;
+    width: 100%;
     height: 85%;
     border-radius: 5px;
 
@@ -112,6 +113,8 @@
 .button_nav {
     width: 35px;
     height: 100%;
+
+    border: 1px solid transparent;
     border-radius: 4px;
 
     font-size: 1.1rem;
@@ -124,7 +127,7 @@
 
 .button_nav:hover {
     background-color: rgb(229, 243, 255);
-    border: 1px solid rgb(148, 205, 255);
+    border-color: rgb(42, 155, 255);
     transition-duration: .2s
 }
 
@@ -144,6 +147,13 @@
 
 #direction {
     width: calc(100% - 76px);
+    border: 1px solid transparent;
+    padding: 0 10px;
+}
+
+#direction:focus {
+    outline: none;
+    border-color: rgb(42, 155, 255);
 }
 
 #direction_bar .buttons {
@@ -157,6 +167,8 @@
     width: 38px;
     height: 100%;
 
+    border: 1px solid transparent;
+
     font-weight: lighter;
     color: #707070d0;
 
@@ -166,13 +178,17 @@
 
 #previous_locations:hover, #reload:hover {
     background-color: rgb(229, 243, 255);
-    border: 1px solid rgb(148, 205, 255);
+    border: 1px solid rgb(42, 155, 255);
 }
 
 #search_bar {
     border: 1px solid rgba(128, 128, 128, 0.5);
     padding: 0 10px;
+    outline: none;
+}
 
+#search_bar:focus {
+    border-color: rgb(42, 155, 255);
 }
 
 .content {
