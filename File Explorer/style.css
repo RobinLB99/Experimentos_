@@ -54,6 +54,20 @@
 
     display: grid;
     place-items: center;
+
+    transition-duration: .2s;
+}
+
+#min:hover, #max:hover {
+    background-color: rgba(209, 209, 209, 0.7);
+    transition-duration: .2s;
+}
+
+#close:hover {
+    color: white;
+    background-color: rgba(222, 0, 0, 0.822);
+    border-radius: 0 4px 0 0;
+    transition-duration: .2s;
 }
 
 .tools_bar {
@@ -62,6 +76,8 @@
 
     background-color: #dbe0e884;
     backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    -moz-backdrop-filter: blur(5px);
 }
 
 .explore {
@@ -102,10 +118,14 @@
 
     display: grid;
     place-items: center;
+
+    transition-duration: .2s;
 }
 
 .button_nav:hover {
-    background-color: rgba(128, 128, 128, 0.2);
+    background-color: rgb(229, 243, 255);
+    border: 1px solid rgb(148, 205, 255);
+    transition-duration: .2s
 }
 
 #recent {
@@ -117,6 +137,36 @@
     width: calc(100% - 305px);
     height: 100%;
     border: 1px solid rgba(128, 128, 128, 0.5);
+
+    display: flex;
+    flex-direction: row;
+}
+
+#direction {
+    width: calc(100% - 76px);
+}
+
+#direction_bar .buttons {
+    width: fit-content;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+#previous_locations, #reload {
+    width: 38px;
+    height: 100%;
+
+    font-weight: lighter;
+    color: #707070d0;
+
+    display: grid;
+    place-items: center;
+}
+
+#previous_locations:hover, #reload:hover {
+    background-color: rgb(229, 243, 255);
+    border: 1px solid rgb(148, 205, 255);
 }
 
 #search_bar {
