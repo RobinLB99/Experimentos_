@@ -38,8 +38,63 @@
 }
 
 #tabs {
-    min-width: 300px;
+    min-width: 500px;
     width: 100%;
+    padding-left: 5px;
+
+    display: flex;
+    flex-direction: row;
+}
+
+.tab {
+    width: fit-content;
+    height: calc(100% - 5px);
+    margin-top: 5px;
+
+    display: flex;
+    flex-direction: row;
+}
+
+.sides.left-right, .center, .sides.right-left {
+    background-color: #dbe0e89d;
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    -moz-backdrop-filter: blur(20px);
+}
+
+.sides.left-right, .sides.right-left {
+    width: 10px;
+    height: 100%;
+}
+
+.sides.left-right {
+    border-top-left-radius: 4px;
+}
+
+.sides.right-left {
+    border-top-right-radius: 4px;
+}
+
+.center {
+    min-width: 100px;
+    width: 150px;
+    height: 100%;
+}
+
+#tab_plus {
+    width: 30px;
+    height: calc(100% - 8px);
+
+    margin: 7px 0 7px 5px;
+
+    border-radius: 4px;
+
+    display: grid;
+    place-items: center;
+}
+
+#tab_plus:hover {
+    background-color: #e5e5e5d6;
 }
 
 #buttons_window {
@@ -75,10 +130,10 @@
     width: 100%;
     height: 100%;
 
-    background-color: #dbe0e884;
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
-    -moz-backdrop-filter: blur(5px);
+    background-color: #dbe0e89d;
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    -moz-backdrop-filter: blur(20px);
 }
 
 .explore {
